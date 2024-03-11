@@ -4,7 +4,7 @@ export default async function Home() {
   const todos = await service()
 
   return (
-    <main className="min-h-screen p-20 grid grid-cols-3 gap-2">
+    <main className="min-h-screen p-6 md:p-20 flex flex-col sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid lg:grid-cols-4 gap-6 md:gap-2">
       {
         todos.map(todo => (
           <section key={todo.id} className='w-full h-36 p-4 rounded-md flex flex-col justify-between gap-3 shadow-md shadow-slate-800'>
